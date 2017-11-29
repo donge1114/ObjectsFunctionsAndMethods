@@ -15,6 +15,8 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
+    lines()
 
 
 def two_circles():
@@ -50,6 +52,47 @@ def two_circles():
 
 
 def circle_and_rectangle():
+    window = rg.RoseWindow(500,500)
+    x_1 = 300
+    y_1 = 300
+    center_point = rg.Point(x_1,y_1)
+    circle_1 = rg.Circle(center_point, 50)
+    circle_1.fill_color = 'blue'
+    circle_1.attach_to(window)
+    thickness = circle_1.outline_thickness
+    color = circle_1.fill_color
+
+    x1 = 100
+    y1 = 150
+    x2 = 200
+    y2 = 50
+    point1 = rg.Point(x1, y1)
+    point2 = rg.Point(x2, y2)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.attach_to(window)
+    x3 = (x1+x2)/2
+    y3 = (y1 + y2) / 2
+    center_point2 = rg.Point(x3, y3)
+    r_thickness = rectangle.outline_thickness
+    r_color = rectangle.fill_color
+
+
+    window.render()
+
+    print(thickness)
+    print(color)
+    print(center_point)
+    print(x_1)
+    print(y_1)
+
+    print(r_thickness)
+    print(r_color)
+    print(center_point2)
+    print(x3)
+    print(y3)
+
+    window.close_on_mouse_click()
+
     """
     -- Constructs an rg.RoseWindow.
     -- Constructs and draws a rg.Circle and rg.Rectangle
@@ -81,7 +124,7 @@ def circle_and_rectangle():
            150.0
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -92,6 +135,40 @@ def circle_and_rectangle():
 
 
 def lines():
+
+    window = rg.RoseWindow(500,500)
+    x1 = 50
+    y1 = 250
+    x2 = 450
+    y2 = 250
+    point1 = rg.Point(x1, y1)
+    point2 = rg.Point(x2, y2)
+    line_1 = rg.Line(point1, point2)
+    line_1.thickness = 5
+    line_1.attach_to(window)
+
+    x3 = 250
+    y3 = 200
+    x4 = 250
+    y4 = 300
+    point3 = rg.Point(x3, y3)
+    point4 = rg.Point(x4, y4)
+    line_2 = rg.Line(point3, point4)
+    line_2.thickness = 10
+    line_2.attach_to(window)
+
+    window.render()
+
+    x5 = (x1+x2)/2
+    y5 = (y1+y2)/2
+    midpoint = rg.Point(x5, y5)
+    print(midpoint)
+    print(x5)
+    print(y5)
+
+    window.close_on_mouse_click()
+
+
     """
     -- Constructs a rg.RoseWindow.
     -- Constructs and draws on the window two rg.Lines such that:
