@@ -81,9 +81,7 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
     turtle4()
-    first_line(200, 100, 300, 30)
-    second_line(100, 200, 0, 0)
-    third_line(-50, 50, 100, 100)
+    three_lines()
     tired_turtle()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
@@ -191,31 +189,10 @@ def turtle4():
     ####################################################################
 
 
-def first_line(x1, y1, x2, y2):
-    yi = rg.SimpleTurtle()
-    yi.speed = 10
-    yi.pen_up()
-    yi.go_to(rg.Point(x1, y1))
-    yi.pen_down()
-    yi.go_to(rg.Point(x2, y2))
-
-
-def second_line(x1, y1, x2, y2):
-    bing = rg.SimpleTurtle()
-    bing.speed = 10
-    bing.pen_up()
-    bing.go_to(rg.Point(x1, y1))
-    bing.pen_down()
-    bing.go_to(rg.Point(x2, y2))
-
-
-def third_line(x1, y1, x2, y2):
-    ding = rg.SimpleTurtle()
-    ding.speed = 10
-    ding.pen_up()
-    ding.go_to(rg.Point(x1, y1))
-    ding.pen_down()
-    ding.go_to(rg.Point(x2, y2))
+def three_lines():
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
     """
     Causes several SimpleTurtles to do the following:
