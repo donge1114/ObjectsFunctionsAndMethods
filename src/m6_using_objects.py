@@ -6,7 +6,7 @@ This module lets you practice  ** using objects **, including:
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Enyi Dong.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE
 
 import rosegraphics as rg
 
@@ -43,7 +43,7 @@ def two_circles():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
@@ -191,7 +191,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 
