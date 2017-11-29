@@ -5,11 +5,11 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Enyi Dong.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -81,6 +81,10 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
     turtle4()
+    first_line(200, 100, 300, 30)
+    second_line(100, 200, 0, 0)
+    third_line(-50, 50, 100, 100)
+    tired_turtle()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -187,7 +191,32 @@ def turtle4():
     ####################################################################
 
 
-def try_functions():
+def first_line(x1, y1, x2, y2):
+    yi = rg.SimpleTurtle()
+    yi.speed = 10
+    yi.pen_up()
+    yi.go_to(rg.Point(x1, y1))
+    yi.pen_down()
+    yi.go_to(rg.Point(x2, y2))
+
+
+def second_line(x1, y1, x2, y2):
+    bing = rg.SimpleTurtle()
+    bing.speed = 10
+    bing.pen_up()
+    bing.go_to(rg.Point(x1, y1))
+    bing.pen_down()
+    bing.go_to(rg.Point(x2, y2))
+
+
+def third_line(x1, y1, x2, y2):
+    ding = rg.SimpleTurtle()
+    ding.speed = 10
+    ding.pen_up()
+    ding.go_to(rg.Point(x1, y1))
+    ding.pen_down()
+    ding.go_to(rg.Point(x2, y2))
+
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -195,7 +224,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -208,7 +237,32 @@ def try_functions():
     ####################################################################
 
 
-def try_methods_and_functions():
+def tired_turtle():
+    wu = rg.SimpleTurtle()
+    wu.pen = rg.Pen('blue', 5)
+    wu.backward(150)
+
+    wu.speed = 1
+    for _ in range (2):
+        wu.draw_square(100)
+        wu.left(30)
+
+    wu.speed = 5
+    wu.pen = rg.Pen('red', 5)
+    for _ in range (10):
+        wu.draw_square(50)
+        wu.left(15)
+
+    wu.speed = 100
+    wu.pen = rg.Pen('red', 35)
+    for _ in range (8):
+        wu.draw_square(300)
+        wu.left(60)
+
+    wu.pen = rg.Pen('black', 3)
+    wu.backward(200)
+    wu.draw_circle(30)
+    wu.draw_square(50)
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
@@ -241,7 +295,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
