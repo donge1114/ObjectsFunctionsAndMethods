@@ -4,7 +4,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Enyi Dong.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
@@ -80,6 +80,7 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
+    turtle4()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -161,7 +162,15 @@ def turtle3():
     maja.end_fill()
 
 
-def try_methods():
+def turtle4():
+
+    jia = rg.SimpleTurtle()
+    jia.pen = rg.Pen('brown',5)
+
+    jia.forward(150)
+    jia.left(90)
+    jia.forward(50)
+    jia.backward(100)
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -172,7 +181,7 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
