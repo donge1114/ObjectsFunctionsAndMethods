@@ -2,8 +2,8 @@
 This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Enyi Dong.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # TODO: 2.
@@ -39,7 +39,7 @@ def main():
     turtle_fun()
 
 
-def print_math:
+def print_math():
     """ Prints some calculated values. """
     x = cos(pi)
     print(x)
@@ -49,8 +49,8 @@ def print_math:
 
 
 def turtle_fun():
-    """
-    Constructs a TurtleWindow,
+
+    """Constructs a TurtleWindow,
     constructs a classic SimpleTurtle and asks it to do some things,
     and waits for the user to click anywhere in the window to close it.
     """
