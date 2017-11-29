@@ -220,21 +220,15 @@ def tired_turtle():
     wu.backward(150)
 
     wu.speed = 1
-    for _ in range (2):
-        wu.draw_square(100)
-        wu.left(30)
+    draw_many_squares(wu, 2, 100, 30)
 
     wu.speed = 5
     wu.pen = rg.Pen('red', 5)
-    for _ in range (10):
-        wu.draw_square(50)
-        wu.left(15)
+    draw_many_squares(wu, 10, 50, 15)
 
     wu.speed = 100
     wu.pen = rg.Pen('red', 35)
-    for _ in range (8):
-        wu.draw_square(300)
-        wu.left(60)
+    draw_many_squares(wu, 8, 300, 60)
 
     wu.pen = rg.Pen('black', 3)
     wu.backward(200)
