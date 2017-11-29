@@ -159,7 +159,7 @@ def example3():
     print(corner1, corner2)  # You can also PRINT RoseGraphics objects.
     print(rectangle)  # See the Console for the output.
 
-    # ------------------------------------------------------------------
+    # ------------ ------------------------------------------------------
     # close_on_mouse_click: Keeps the window open until user clicks.
     # ------------------------------------------------------------------
     window.close_on_mouse_click()
