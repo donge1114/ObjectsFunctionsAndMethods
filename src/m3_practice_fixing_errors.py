@@ -41,7 +41,7 @@ def main():
 
 def print_math():
     """ Prints some calculated values. """
-    x = cosi(pi)
+    x = cos(pi)
     print(x)
 
     y = sin(pi)
