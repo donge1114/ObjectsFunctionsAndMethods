@@ -33,11 +33,13 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
+    turtle4()
     turtle1()
     turtle3()
     turtle2()
     turtle2()
-    turtle4()
+    turtle5()
+    turtle6()
 
     window.close_on_mouse_click()
 
@@ -113,6 +115,27 @@ def turtle4():
     jia.begin_fill()
     jia.draw_square(10)
     jia.end_fill()
+
+
+def turtle5():
+
+    yi = rg.SimpleTurtle('circle')
+    yi.pen = rg.Pen('yellow', 4)
+    yi.backward(200)
+    yi.left(30)
+    yi.begin_fill()
+    yi.draw_regular_polygon(100, 5)
+    yi.end_fill()
+
+
+def turtle6():
+
+    bing = rg.SimpleTurtle()
+    bing.pen = rg.Pen('orange', 5)
+    bing.forward(200)
+    bing.right(50)
+    bing.draw_regular_polygon(4, 50)
+
 #######################################################################
 #
 # DONE: 2.
